@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.devil{
+    position: absolute;
+    margin: 0;
+}
+
+.link{
+    color: black;
+}
+
+a.f7-icons{
+    font-size: 3rem;
+    color: black;
+}
+
+.toolbar{
+    padding: 40px;
+    margin: auto;
+}
