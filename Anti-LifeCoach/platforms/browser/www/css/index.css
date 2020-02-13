@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+   
+    background-color: #E3D081;
+}
+
+body{
+    font-size: 100%;
+    
+}
+
+img{
+    width: 100%;
+
+/*    box-shadow: 5px 10px;*/
+}
+
+p{
+    font-family: 'Odibee Sans', cursive;
+    font-size: 1.5rem !important;
+    color: #54494B;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Odibee Sans', cursive;
+    font-size: 3rem !important;
+    color: #B33951;
+    text-align: center;
+    padding-top: 3rem;
+    z-index: 1;
+    text-shadow: 2px 2px #fff;
+}
+
+#swipeme{
+    padding: 0px;
+    font-size: 2rem !important;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  z-index: 1;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  margin: auto;
+  cursor: pointer;
+  padding-bottom: 5rem;
+}
+
+.devil{
+    position: absolute;
+    align-content: center;
+    margin: 0;
+/*
+    padding-top: 5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+*/
+    padding: 0px;
+}
+
+.title{
+    background-color: #91C7B1;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 2rem !important;
+    align-content: center;
+    color: #54494B;
+    text-shadow: 2px 2px #fff;
+
+}
+
+.link{
+    color: black;
+}
+
+a.f7-icons{
+    font-size: 3rem;
+    color: white;
+    margin: 3rem;
+    background-color: #B33951;
+}
+
+.toolbar{
+    padding: 40px;
+    margin: auto;
+}
+
+.toolbar-inner{
+    background-color: #B33951;
+}
+
+.navbar-inner{
+     background-color: #91C7B1;
+}
+
+/*THIS IS THE CSS FOR THE SLIDERS IN THE STORE PAGE*/
+
+/* A bit of demo styles */
+.demo-swiper .swiper-slide {
+  font-size: 25px;
+  font-weight: 300;
+
+  height: 100vh;
+  align-items: center;
+/*  background: #fff;*/
+  color: #000;
+}
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+/*  background: #fff;*/
+}
+.demo-swiper {
+  margin: 0px 0 35px;
+  font-size: 18px;
+  height: 100vh;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 85%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 70%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 30%;
+}
+
+.swiper-wrapper{
+    height: 100vh;
+}
+
+.swiper-slide.swiper-slide-active{
+    max-height: 480px;
+}
