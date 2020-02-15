@@ -56,39 +56,46 @@ var mainView = app.views.create('.view-main');
 $("#main_devil").on("click", function(){
     
   console.log("they clicked me!");
-  
-    $("#main_devil").html('<img src="img/gifs/bataway.gif">');
+
+  $("#main_devil").html('<img src="img/gifs/bataway.gif">');
     
+   setTimeout(function(){
+              
+              $("#main_devil").hide();
+              
+              }) 
+    , 2000
+    
+    $("#main_devil").show();  
 });
+//THIS ONLY WORKS UPON REFRESHING THE APP FOR SOME REASON???
 
 
 
 $(".devil").on("click", function(){
     
    cSrc = $(this).attr("src");
+ 
+    
+$$(document).on('page:init', '.page[data-name="page2"]', function() {
+   
+    
+    console.log(cSrc);
+    
+    $("#devilbox").html("<img src='" + cSrc + "' class='pet'>");
+    
+    $("#main_devil").remove();
+    
 });
 
+});
+//^^ TRYING TO GET THE MAIN DEVIL TO SWITCH BETWEEN OUTFITS
 
-
-    
-//$$(document).on('page:init', '.page[data-name="page2"]', function() {
-//   
+//$(".button").on("click", function(){
 //    
-//    console.log(cSrc);
-//    
-//    $("#devilbox").html("<img src='" + cSrc + "' class='pet'>");
-//    
-//    $("#main_devil").remove();
-//    
+//    console.log("purchase");
+//    $("#naked_devil").html('<img src="img/gifs/ballerina_blink.gif">');
 //});
-
-
-
-$(".button").on("click", function(){
-    
-    console.log("purchase");
-    $("#naked_devil").html('<img src="img/gifs/ballerina_blink.gif">');
-});
 
 
 
@@ -103,14 +110,15 @@ $(".button").on("click", function(){
 //        $('.item-input-info').prepend("<h1>" + badDeed + "</h1>");
 //    }
 //});
+//^^TRYING TO MAKE THE LOGS STORE ON PAGE 3 AFTER YOU HIT ENTER 
 
 
 $("#name").on("keypress", function(e){
-    if(e.key == "Enter"){
+    if(e.key == "K"){
         var name = $(this).val();
         console.log(name);
-        $('.page-content').prepend("<h1>" + name + "</h1>");
-        $("#name").hide();
+        $('.page-content').append("<h2>" + name + "</h2>");
+//        $("#name").hide();
     }
 });
     
