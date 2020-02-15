@@ -1,3 +1,12 @@
+/* latin */
+@font-face {
+  font-family: 'Odibee Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/OdibeeSans-Regular.ttf") format('truetype');
+}
+
 *{
     box-sizing: border-box;
    
@@ -33,12 +42,13 @@ h1{
 }
 
 #swipeme{
-    padding: 0px;
-    font-size: 2rem !important;
+/*    padding: 0px;*/
+/*    font-size: 2rem !important;*/
+    border: none;
 }
 
 .button {
-  background-color: #4CAF50;
+  background-color: #54494B;
   border: none;
   color: white;
   z-index: 1;
@@ -84,6 +94,11 @@ a.f7-icons{
     background-color: #B33951;
 }
 
+a.f7-icons:active{
+    font-size: 3.5rem;
+    color: #91C7B1;
+}
+
 .toolbar{
     padding: 40px;
     margin: auto;
@@ -115,9 +130,9 @@ a.f7-icons{
 /*  background: #fff;*/
 }
 .demo-swiper {
-  margin: 0px 0 35px;
+/*  margin: 0px 0 35px;*/
   font-size: 18px;
-  height: 100vh;
+/*  height: 100vh;*/
 }
 .demo-swiper.demo-swiper-auto .swiper-slide {
   width: 85%;
@@ -130,7 +145,7 @@ a.f7-icons{
 }
 
 .swiper-wrapper{
-    height: 100vh;
+    height: 70vh;
 }
 
 .swiper-slide.swiper-slide-active{
